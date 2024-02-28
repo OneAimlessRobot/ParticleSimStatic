@@ -1,4 +1,4 @@
-BINARY= ParticleSimStatic
+BINARY= ParticleSimStatic.exe
 CURRDIR = $(shell pwd)
 
 
