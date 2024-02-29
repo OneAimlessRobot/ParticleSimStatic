@@ -123,7 +123,7 @@ void PhysicsEngine::printSpeedsAndPosEnts(){
        std::cout<<"Posição: (x,y)= ("<<(*it)->getPos().x<<" , "<<(*it)->getPos().y<<")\n";
        std::cout<<"Velocidade: "<<GVector::getNorm((*it)->getVec())<<"\n";
        std::cout<<"Coeficientes: \n";
-       std::cout<<"Elasticidade Invertida: "<<1-(*it)->getElasticity()<<"\n";
+       std::cout<<"Elasticidade: "<<(*it)->getElasticity()<<"\n";
        std::cout<<"Massa: "<<(*it)->getMass()<<"\n";
        std::cout<<"Carga: "<<(*it)->getCharge()<<"\n";
        std::cout<<"Coeficiente de resis. do ar: "<<(*it)->getDragConstant()<<"\n";
