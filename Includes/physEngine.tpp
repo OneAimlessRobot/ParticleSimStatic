@@ -10,11 +10,11 @@ template <typename T>  void PhysicsEngine::handleCollisionsWithArena(std::list<T
         SDL_FRect currBody=current->getBody();
         if(cont->getArena()->whereIsColliding(currBody)>0){
 	
-    SDL_FPoint vec=current->getVec();
     
 //    std::cout<<current->getPos().x<<" , "<<current->getPos().y<<"\n";
         int where=cont->getArena()->whereIsColliding(currBody);
             current->bounce();
+    SDL_FPoint vec=current->getVec();
             PhysicsAux::separateEntityFromCollider(current,cont->getArena(),where);
     if (where==1) {
         GVector::Reflect(&vec, new GVector(-1.0f, 0.0f));

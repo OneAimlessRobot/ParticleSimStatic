@@ -11,7 +11,7 @@
 #include "../Includes/physicsAux.h"
 
 float PhysicsAux::getReboundSpeed(float initSpeed,float coeff){
-float result= initSpeed-(initSpeed*coeff);
+initSpeed=(initSpeed*coeff);
 
 //  -----          if(initSpeed!=initSpeed){
 //    std::cout<<"ERRO!!!!!\n";
@@ -20,7 +20,7 @@ float result= initSpeed-(initSpeed*coeff);
 //  -------          if(result!=result){
 //    std::cout<<"ERRO!!!!!\n";
 //    }
-    return result;
+    return initSpeed;
 
 }
 float PhysicsAux::electricForce(SDL_FPoint p1,SDL_FPoint p2,float q1,float q2){
