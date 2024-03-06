@@ -135,7 +135,6 @@ void PhysicsEngine::handleInterparticleGravity(std::list<T*>& ents){
     for (it2=it; it2 !=endOfSecond;) {
         ++it2;
         T *current2= *(it2);
-        PhysicsAux::accelerateEntity((current2),PhysicsAux::gravVector(current->getCenter(),current2->getCenter(),current->getMass(),current2->getMass()));
         PhysicsAux::accelerateEntity((current),PhysicsAux::gravVector(current2->getCenter(),current->getCenter(),current->getMass(),current2->getMass()));
 
     }
@@ -157,7 +156,6 @@ void PhysicsEngine::handleInterparticleElectricity(std::list<T*>& ents){
     for (it2=it; it2 !=endOfSecond;) {
         ++it2;
         T *current2= *(it2);
-        PhysicsAux::accelerateEntity((current2),PhysicsAux::electricVector(current->getCenter(),current2->getCenter(),current->getCharge(),current2->getCharge()));
         PhysicsAux::accelerateEntity((current),PhysicsAux::electricVector(current2->getCenter(),current->getCenter(),current->getCharge(),current2->getCharge()));
 
     }
