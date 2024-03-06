@@ -123,9 +123,9 @@ int Entity::areTouching(Entity*a,Entity*b){
 Entity* Entity::randEnt(float width, float height,float maxMass,float maxSize,float maxSpeed,float maxCharge){
 //float size= Aux::getRandomFloat(10,maxSize);
 float maxAngle=Aux::getRandomFloat(0,2*3.14159);
-//float inve=Aux::getRandomFloat(0,1);
+float e=Aux::getRandomFloat(0,1);
 //float e=1;
-float e=0;
+//float e=0;
 
 //float newMass=Aux::getRandomFloat(0,maxMass);
 int arrSize=2;
